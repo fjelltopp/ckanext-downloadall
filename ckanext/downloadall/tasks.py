@@ -54,6 +54,7 @@ def update_zip(package_id, skip_if_no_changes=True):
         resource = dict(
             package_id=dataset['id'],
             url='dummy-value',
+            owner_org=dataset['owner_org'],
             upload=fp,
             name=u'All resource data',
             format=u'ZIP',
